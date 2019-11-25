@@ -1,0 +1,13 @@
+graph TD
+A[其他人员] -->|提交 issue| B(开发人员)
+B -->  C{issus 审核}
+C -->|不支持| D[关闭 issue]
+C -->|支持| E[开发人员提供解决方案]
+E -->|推送更新| F[更新]
+F --> D
+A[其他人员] -->|提交 Pull Requests| G(开发人员)
+G -->  H{Pull Requests 审核}
+H -->|不同意合并| I[关闭 Pull Requests]
+H -->|同意合并| J[合并]
+J -->|推送更新| K[更新]
+K --> I
