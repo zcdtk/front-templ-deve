@@ -1,0 +1,6 @@
+graph TD
+    A[开始开发] -->|以主干 master, 建立开发分支| B>开发分支]
+    B -->|处理 issues 和 Pull Requests| C{功能支持}
+    C -->|合并开发分支到主干| D>主干]
+    D -->|以主干 master 建立新 tag| E>新 tag]
+    E -->|删除开发分支| F[开发结束]
